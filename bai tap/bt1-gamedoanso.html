@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="choiGame()">chơi</button>
+    </div>
+    <script>
+        function choiGame(){
+            let a = parseInt(prompt("nhập vào một số mà bạn muốn đoán trong trong khoản từ 1 đến: "));
+            let b = parseInt(prompt("nhập vào số bạn muốn đoán:"));
+            let c = 33;
+            while(c!==b){
+                b = parseInt(prompt("cho phép bạn chọn lại số khác:"));
+                if(c==b){
+                    alert("chúc mừng bạn đã đoán đúng số " + c);
+                    break;
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
