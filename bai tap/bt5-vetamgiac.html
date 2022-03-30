@@ -14,13 +14,36 @@
             a+="*";
             document.write(a, " </br>");
         }
-       
+       //
         for(let j=k;j>0;j--){
             for(i=0;i<j;i++){
                 document.write("*");
             }
             document.write("</br>");
+            
         }
+        //tam giac nguoc  c1
+        for(let b=1;b<=k;b++){
+            document.write( "&nbsp;&nbsp;");
+            for(let c=1;c<=k;c++){
+                if((b+c)>k){
+                    document.write("*");
+
+                }else document.write("&nbsp;&nbsp;");
+            }
+            document.write("</br>");
+        }
+        
+        //
+       for(let v=1;v<=k;v++){      // vẽ ra 2 hình tam giác
+           for(let b=1;b<=v;b++){    
+               document.write( "&nbsp;&nbsp;"); // hình tam giác dấu cách
+           }
+           for(let b=v;b<=k;b++){   // hình tam giác dấu *
+               document.write("*");
+           }
+           document.write("</br>");
+       }
     </script>
 </body>
 </html>

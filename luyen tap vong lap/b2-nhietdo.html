@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nhietDo;
+        // kiểm tra xem người dùng có nhập vào số hay ko
+        do {
+            nhietDo = prompt("nhập vào nhiệt độ");
+            if(!isNaN(nhietDo)){
+                break;
+            }else {
+                alert("mời nhập vào một số");
+            }
+        } while (isNaN(nhietDo));
+
+        if(nhietDo>100){
+            alert("yêu cầu người dùng giảm nhiệt độ xuống");
+        }else if(nhietDo<20){
+            alert("yêu cầu người dùng tăng nhiệt độ");
+        }
+    </script>
+</body>
+</html>

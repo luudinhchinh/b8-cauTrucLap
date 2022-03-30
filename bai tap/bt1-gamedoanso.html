@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <button onclick="choiGame()">chơi</button>
+        <button onclick="choiGame()">chơi game đoán số</button>
     </div>
     <script>
         function choiGame(){
             let a = parseInt(prompt("nhập vào một số mà bạn muốn đoán trong trong khoản từ 1 đến: "));
             let b = parseInt(prompt("nhập vào số bạn muốn đoán:"));
-            let c = 33;
+            let c = 5;
             while(c!==b){
                 b = parseInt(prompt("cho phép bạn chọn lại số khác:"));
                 if(c==b){

@@ -9,15 +9,18 @@
 <body>
     
     <script>
-        for(let i = 1;i<10;i++){   
-            for(let j = 2;j<=9;j++){              
-                document.write( j + "x" + i + "=" + j*i  + "  " );
-                document.write("</t>")    
+        table = "<table boder='1' cellspacing='0' celpadding='5' " 
+        for(let i = 1;i<=10;i++){  
+            table+= "<tr>" ;
+            for(let j = 2;j<10;j++){              
+                table+= "<td>" + j + "x" + i + "=" + j*i  + " </td> " ;
+                
             }
-           document.write("</br>");
+           table+= "</tr>";
         }
+        table+="</td>";
         
-       
+       document.write(table);
         
        
     </script>

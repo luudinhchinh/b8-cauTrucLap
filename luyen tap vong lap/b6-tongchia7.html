@@ -8,13 +8,16 @@
 </head>
 <body>
     <script>
+        
+        let tong=0;
         let num = parseInt(prompt("nhập vào một số"));
-        let k=0; // biến k sẽ giữ số đảo ngược
-        do {
-            k = k*10 + num%10;
-           num = (num-(num%10))/10; 
-        } while (num!=0);
-        document.write("số đảo ngược là: " + k)
+        for(let i=1;i<=num;i++){
+            if(i%7==0){  
+                tong+=i;
+                i++;      
+            } 
+            
+        } document.write(tong);
     </script>
 </body>
 </html>
